@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="~/NewTravelWebsite.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
+    <div id="content">
+           <section id="Home">
+                <header id="stickyNavbar">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">NewTravelWebsite</a>
@@ -23,6 +25,12 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Nashville</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Las Vegas</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
@@ -30,17 +38,25 @@
             </div>
         </nav>
     </header>
+    </section>
+    </div>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    @*<footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2022 - NewTravelWebsite - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
+         </footer>
+        <footer class="footer">
+            <div class="container">
+            <p>Author: Michelle Roberts</p>
+            <p><a href="mailto:Missmic33@gmail.com">Missmic33@gmail.com</a></p>
+            </div>
+    </footer>*@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
@@ -74,17 +90,7 @@
         <div class="introNash">
             <!-- Introductory Content -->
 
-            <h2>About us</h2>
-            <p>We are a middle class couple from Louisville, Kentucky. Our interests are pool, food, and shopping. Louis travels to pool tournaments around the country. He also helps install Diamond pool tables. I work a full-time clerical night job.</p>
-            <!-- Louisville -->
-
-                <img class="downTown" src="/iStock-1304748649Louisville.jpg" alt="Home Sweet Home - Louisville, Kentucky" style="width:98%;height:auto;" class="banner">
-                <section>
-                <h2>Louisville, KY</h2>
-                        <!--Do I need to add License information and photo credit??-->>
-                <h3>Our home.</h3>
-
-                    <p>I thought I should show you what we get to see every day!</p>
+           
 
             <!-- Downtown Nashville -->
 
@@ -241,10 +247,7 @@
                 <h2>Downtown Cincinnati, OH</h2>
             </section>
         </div>
-        <footer class="footer">
-            <p>Author: Michelle Roberts</p>
-            <p><a href="mailto:Missmic33@gmail.com">Missmic33@gmail.com</a></p>
-        </footer>
+        
     </div>
 </body>
 
